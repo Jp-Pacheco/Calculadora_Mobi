@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calculadora"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        />
+
+    <TextView
+        android:id="@+id/txtv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Valor 1:"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_700"
+        />
+
+    <EditText
+        android:id="@+id/edtV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/purple_700"
+        android:hint="Informe aqui o valor:"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/txtv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtV1"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Valor 2:"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_700"
+        />
+
+    <EditText
+        android:id="@+id/edtV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/purple_700"
+        android:hint="Informe aqui o valor 2:"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        ></EditText>
+
+    <Button
+        android:id="@+id/btnSomar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtV2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="SOMAR"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSomar"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Subtrair"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnMult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSub"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Multiplicar"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMult"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Dividir"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        ></Button>
+</RelativeLayout>
